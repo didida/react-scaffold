@@ -8,7 +8,7 @@ export default class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            text:'可以了',
+            text:'初始态',
             arr:['请选择']
         }
     }
@@ -20,7 +20,7 @@ export default class App extends React.Component {
                 return res.json();
             })
             .then((data) => {
-                console.log(data);
+                console.log(data.obj);
                 this.setState({arr:data.obj});
             })
             .catch((ex) => {
@@ -29,7 +29,7 @@ export default class App extends React.Component {
     }
 
     getData = () => {
-        this.setState({text:'开始吧'});
+        this.setState({text:'激发态'});
     }
 
     render() {

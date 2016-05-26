@@ -9,7 +9,7 @@ module.exports = {
     inline: true,
     progress: true,
     contentBase: './app',
-    port: 8088
+    port: 8080
   },
   entry: [
     'webpack/hot/dev-server',
